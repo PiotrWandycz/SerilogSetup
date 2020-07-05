@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
+using Serilog;
 
 namespace SerilogSetup.Pages
 {
@@ -14,7 +15,7 @@ namespace SerilogSetup.Pages
 
         public void OnGet()
         {
-
+            Log.Information("Navigated to Pages/Index");
         }
     }
 }
